@@ -6,7 +6,7 @@ export default class Recipe extends Component {
         const {image_url, title, publisher, source_url, recipe_id} = this.props.recipe;
         return (
             <React.Fragment >
-                <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+                <div className="col-10 mx-auto col-md-6 col-lg-4 my-3">
                     <div className="card">
                         <img
                             src={image_url}
@@ -23,7 +23,7 @@ export default class Recipe extends Component {
                             </h6>
                         </div>
                         <div className="card-footer">
-                            <button type="button" className="btn btn-primary text-capitalize">add</button>
+                            <button type="button" className="btn btn-primary text-capitalize">Details</button>
                             <a 
                             target = "_blank"
                             rel = "noopener noreferrer"
