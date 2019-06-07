@@ -10,22 +10,22 @@ class App extends Component {
         url: "https://www.food2fork.com/api/search?key=f30e059543d3bbd9d62082af60247914"
     }
 
-    // async getRecipe() {
+    async getRecipe() {
 
-    //     try {
-    //         const getData = await fetch(this.state.url)
-    //         const jsonData = await getData.json();
-    //         this.setState({recipe: jsonData.recipes})
-    //     } catch (error) {
-    //         console.log(error)
-    //     }
+        try {
+            const getData = await fetch(this.state.url)
+            const jsonData = await getData.json();
+            this.setState({recipe: jsonData.recipes})
+        } catch (error) {
+            console.log(error)
+        }
 
-    // }
+    }
 
-    // componentDidMount(){
-    //     console.log("comp did mount")
-    //     this.getRecipe()
-    // }
+    componentDidMount(){
+        console.log("comp did mount")
+        this.getRecipe()
+    }
 
     render() {
         // console.log("render runs")
